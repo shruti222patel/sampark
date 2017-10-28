@@ -4,6 +4,7 @@ import { Root } from 'native-base';
 import AppNavigator from './src/components/AppNavigator';
 import AppHeader from './src/components/AppHeader';
 import HariBhaktList from './src/components/HariBhaktList';
+import PhoneAuthTest from './src/components/PhoneAuthTest';
 
 export default class App extends React.Component {
 
@@ -19,7 +20,8 @@ export default class App extends React.Component {
         return (
             <Root>
               <AppHeader title='Sampark Families'/>
-              <HariBhaktList assignedKaryakar='Amit bhai'/>
+              {/*<HariBhaktList assignedKaryakar='Amit bhai'/>*/}
+              <PhoneAuthTest/>
             </Root>);
         // return (
         //   <View style={styles.container}>

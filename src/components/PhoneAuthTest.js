@@ -16,6 +16,8 @@ export default class PhoneAuthTest extends Component {
             phoneNumber: '+44',
             confirmResult: null,
         };
+
+        // firebase.initializeApp(this);
     }
 
     componentDidMount() {
