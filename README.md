@@ -70,7 +70,7 @@ This app was created to help Richmond BAPS mandir do Sampark Seva. It is still a
 #### Android
 - you will need to get the appropriate key (`.keystore` file) from someone on the team that has it & place the key in `sampark/android/`
 - run `cd android && ./gradlew assembleRelease`
-- sign generated apk `./sign-mac-example.sh app/build/outputs/apk/app-release-unsigned.apk`
+- sign generated apk `./sign-mac.sh app/build/outputs/apk/app-release-unsigned.apk`
 - signed apk is android/app/build/outputs/apk/app-release-unsigned.apk` (despite the name)
 
 ##### Making Updates
