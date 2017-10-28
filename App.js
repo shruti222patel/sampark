@@ -19,7 +19,7 @@ export default class App extends React.Component {
         return (
             <Root>
               <AppHeader title='Sampark Families'/>
-              <HariBhaktList assignedKaryakar='Amit bhai'/>
+              <HariBhaktList assignedKaryakar='Ashish Patel'/>
             </Root>);
         // return (
         //   <View style={styles.container}>
