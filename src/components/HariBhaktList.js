@@ -78,7 +78,7 @@ class HariBhaktList extends Component {
 
 
     render() {
-        console.log('inside haribhakt render');
+        // console.log('inside haribhakt render');
         return (
             <Content>
                 <List>
@@ -89,18 +89,5 @@ class HariBhaktList extends Component {
     }
 
 }
-
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        paddingTop: 22
-    },
-    item: {
-        padding: 10,
-        fontSize: 18,
-        height: 44,
-    },
-})
 
 export default HariBhaktList;
