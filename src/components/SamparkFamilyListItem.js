@@ -24,7 +24,7 @@ export default class SamparkFamilyListItem extends Component {
         if (this.state.isComplete) {
             liStyle['backgroundColor'] = '#e8e8ee';
             // nameStyle['textDecorationLine'] = 'line-through';
-            nameStyle['fontStyle'] = 'italic';
+            // nameStyle['fontStyle'] = 'italic';
             rightIcons = (
                 <Right style={{flexDirection: 'row', justifyContent:'flex-end'}}>
 
