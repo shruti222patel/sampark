@@ -19,26 +19,30 @@ export default class SamparkFamilyListItem extends Component {
     render() {
         var liStyle = {marginLeft: 0, paddingLeft: 17};
         var nameStyle = {fontSize:18};
+
+        var rightIcons;
         if (this.state.isComplete) {
             liStyle['backgroundColor'] = '#e8e8ee';
             nameStyle['textDecorationLine'] = 'line-through';
+
+            rightIcons = (
+                <Right style={{flexDirection: 'row', justifyContent:'flex-end'}}>
+                    <Icon name='check-circle' size={35} color='green' onPress={this.toggleComplete} ></Icon>
+                </Right>);
+        } else {
+            rightIcons = (
+                <Right style={{flexDirection: 'row'}}>
+                    <MapButton  destination={this.props.address} color='#bf0000'></MapButton>
+                    <Icon name='check-circle-o' size={35} color='green' onPress={this.toggleComplete}></Icon>
+                </Right>);
         }
-
-        var isCompleteIcon = this.state.isComplete
-            ? <Icon name='check-circle' size={35} color='green' onPress={this.toggleComplete} ></Icon>
-            : <Icon name='check-circle-o' size={35} color='green' onPress={this.toggleComplete}></Icon>
-
 
         return (
             <ListItem style={liStyle}>
                 <Left>
                     <Text style={nameStyle}>{this.props.name}</Text>
                 </Left>
-                <Right style={{flexDirection: 'row'}}>
-                    <MapButton  destination={this.props.address} color='#bf0000'></MapButton>
-                    {isCompleteIcon}
-
-                </Right>
+                {rightIcons}
             </ListItem>);
 
     }
