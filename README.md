@@ -79,3 +79,8 @@ This app was created to help Richmond BAPS mandir do Sampark Seva. It is still a
 ##### More Info
 - for more info/release configs, read https://facebook.github.io/react-native/docs/signed-apk-android.html
 - for more info on self signing apk, read http://www.androiddevelopment.org/tag/apk/
+
+
+
+### Miscellaneous Info
+- google spreadsheets api: https://developers.google.com/sheets/api/v3/data
