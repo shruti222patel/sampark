@@ -23,16 +23,18 @@ export default class SamparkFamilyListItem extends Component {
         var rightIcons;
         if (this.state.isComplete) {
             liStyle['backgroundColor'] = '#e8e8ee';
-            nameStyle['textDecorationLine'] = 'line-through';
-
+            // nameStyle['textDecorationLine'] = 'line-through';
+            nameStyle['fontStyle'] = 'italic';
             rightIcons = (
                 <Right style={{flexDirection: 'row', justifyContent:'flex-end'}}>
+
+                    <MapButton  destination={this.props.address} color='grey' disabled={true}></MapButton>
                     <Icon name='check-circle' size={35} color='green' onPress={this.toggleComplete} ></Icon>
                 </Right>);
         } else {
             rightIcons = (
                 <Right style={{flexDirection: 'row'}}>
-                    <MapButton  destination={this.props.address} color='#bf0000'></MapButton>
+                    <MapButton  destination={this.props.address} color='#bf0000' disabled={false}></MapButton>
                     <Icon name='check-circle-o' size={35} color='green' onPress={this.toggleComplete}></Icon>
                 </Right>);
         }

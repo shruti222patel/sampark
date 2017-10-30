@@ -76,7 +76,7 @@ class Vichran extends Component {
 
             if (newListItems.length > 0) {
                 listItems.push(<Separator bordered style={{height: 50, justifyContent: 'center'}}>
-                    <Text style={{fontSize: 20, fontWeight: 'bold'}}>{zone}</Text>
+                    <Text style={{fontSize: 20, fontWeight: '500'}}>{zone}</Text>
                 </Separator>);
 
                 listItems = listItems.concat(newListItems);

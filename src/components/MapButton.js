@@ -12,19 +12,22 @@ export default class MapButton extends Component {
 
     openMaps() {
 
-        // Get Maps link
-        var mapsUrl = 'https://www.google.com/maps/dir/?api=1&destination='
-            // + encodeURIComponent('3725 Applewood Rd, Richmond, VA 23234')
-            +encodeURIComponent(this.props.destination)
-            + '&travelmode=driving&dir_action=navigate';
-        console.log(mapsUrl);
+        if (! this.props.disabled) {
+            // Get Maps link
+            var mapsUrl = 'https://www.google.com/maps/dir/?api=1&destination='
+                // + encodeURIComponent('3725 Applewood Rd, Richmond, VA 23234')
+                +encodeURIComponent(this.props.destination)
+                + '&travelmode=driving&dir_action=navigate';
+            console.log(mapsUrl);
 
-        return Linking.openURL(mapsUrl);
+            return Linking.openURL(mapsUrl);
+        }
+
     }
 
     render() {
         return (
-            <Icon name='map-marker' style={{flex: 1}} onPress={this.openMaps} size={35} color={this.props.color}>
+            <Icon name='map-marker' style={{flex: 1}} onPress={this.openMaps} size={35} color={this.props.color} disabled={true}>
             </Icon>
         );
     }
