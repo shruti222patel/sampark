@@ -15,7 +15,7 @@ class AppHeader extends Component {
                     {/*/!*</Button>*!/*/}
                 {/*</Left>*/}
                 <Body>
-                <Title>{this.props.title}</Title>
+                <Title style={{fontSize: 25}}>{this.props.title}</Title>
                 </Body>
                 {/*<Right>*/}
                     {/*/!*<Button transparent>*!/*/}

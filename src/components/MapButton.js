@@ -24,7 +24,7 @@ export default class MapButton extends Component {
 
     render() {
         return (
-            <Icon name='map-marker' onPress={this.openMaps} size={20} color='red'>
+            <Icon name='map-marker' onPress={this.openMaps} size={40} color='red'>
             </Icon>
         );
     }

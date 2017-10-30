@@ -49,7 +49,7 @@ class HariBhaktList extends Component {
                 var kar = (
                     <ListItem key={fam[1]}>
                         <Left>
-                            <Text>{fam[2]}</Text>
+                            <Text style={{fontSize:20}}>{fam[2]}</Text>
                         </Left>
                         <Right>
                             <MapButton destination={fam[3]}></MapButton>
