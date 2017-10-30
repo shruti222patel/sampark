@@ -84,3 +84,6 @@ This app was created to help Richmond BAPS mandir do Sampark Seva. It is still a
 
 ### Miscellaneous Info
 - google spreadsheets api: https://developers.google.com/sheets/api/v3/data
+- collapsable sections: https://moduscreate.com/expanding-and-collapsing-elements-using-animations-in-react-native/
+- redux multi step form: https://redux-form.com/7.1.2/examples/wizard/
+- random multi step form: https://www.viget.com/articles/building-a-multi-step-registration-form-with-react
