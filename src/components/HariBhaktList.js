@@ -42,9 +42,7 @@ class HariBhaktList extends Component {
             var data = []
             for (let fam of samparkFamilies) {
 
-
                 console.log(fam);
-
 
                 var kar = (
                     <ListItem key={fam[1]}>
