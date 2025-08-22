@@ -1,6 +1,6 @@
 # Sampark
 
-This app was created to help Richmond BAPS mandir do Sampark Seva. It is still a work in progress. If you'd like to get involved or use this app, email Shruti at shruti222patel@gmail.com
+This app was created to help do Sampark Seva. It is still a work in progress. If you'd like to get involved or use this app, email Shruti at shruti222patel@gmail.com
 
 
 ## Development
